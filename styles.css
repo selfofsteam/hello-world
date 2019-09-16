@@ -190,10 +190,10 @@ footer img {
     padding: 4px 0;
 }
 .standard-nav ul li a {
-    color: #c0b3a0;
+    color: #000000;
     text-decoration: none;
     font-weight: 700;
-    text-shadow: 0 0 13px #fff;
+    text-shadow: 0 0 13px #222;
     display: inline-block;
     transition: .4s ease-in-out text-shadow;
 }
