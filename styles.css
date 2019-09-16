@@ -193,7 +193,7 @@ footer img {
     color: #c0b3a0;
     text-decoration: none;
     font-weight: 700;
-    text-shadow: 0 0 13px #222;
+    text-shadow: 0 0 13px #fff;
     display: inline-block;
     transition: .4s ease-in-out text-shadow;
 }
