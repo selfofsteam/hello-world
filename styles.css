@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Nanum+Gothic:400,800');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-image: url(images/splash1.jpg);
+    background-color: #3f3250;
+    background-blend-mode: hard-light;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1, h2, h3 {
+    font-family: 'Nanum Gothic', arial, sans-serif;
+    font-weight: 800;
+}
+h1 {
+    padding: 270px 0 200px 25px;
+    margin: 0;
+    background-image: url(images/splash1.jpg);
+    background-size: cover;
+    background-color: #c0b3a0;
+    font-size: 3em;
+    color: #e14658;
+    text-shadow: 1px 1px #c0b3a0, 4px 4px #3f3250, 0 0 7px #222;
+}
+h2 {
+    font-size: 2em;
+    color: #e14658;
+    text-shadow: 1px 1px #c0b3a0, 4px 4px #3f3250, 0 0 7px #222;
+    display: inline-block;
+    margin: 20px 0 20px 20px;
+}
+h3 {
+    color: #c0b3a0;
+    text-shadow: 4px 4px #3f3250, 0 0 7px #222;
+    text-align: center;
+}
+p {
+    color: #c0b3a0;
+    margin: 0 auto 20px;
+    padding: 7px;
+    text-shadow: 0 0 4px #111; 
+    width: 70%;
+    display: block;
+    background: #22252c;
+    border-radius: 15px; 
+    box-shadow: 0 0 15px #fff;
+    
+}
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 45px/15px;
+}
+ul {
+    list-style: none;
+}
+li {
+    
+}
+a {
+    color: #c0b3a0;
+    text-decoration: none;
+}
+footer {
+    background: #BD0016;
+    margin-top: 50px;
+}
+footer p {
+    margin: 0;
+    display: inline-block;
+    font-size: .7em;
+    width: 85%;
+    background: transparent;
+    box-shadow: none;
+}
+footer img {
+    margin: 0;
+    width: 15%;
+    float: right;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+#clinic {
+    text-align: center;
+    padding: 0;
+    background-image: url(images/splash2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #3f3250; 
+    background-blend-mode: multiply;
+    box-shadow: 0 0 4px #777;
+    padding: 8px 0;
+    
+}
+#clinic li {
+    padding: 10px 0;
+    
+}
+#clinic a {
+    padding: 5px;
+    background-color: #e14658;
+    border-radius: 0 16px;
+    transition: .3s ease-in-out all;
+    text-shadow: 0 0 4px #22252c;
+    box-shadow: -2px -2px #fff;
+    font-weight: 700;
+}
+#clinic a:hover {
+    border-radius: 16px 0;
+    color: #3f3250;
+    text-shadow: 0 0 4px #c0b3a0;
+}
+#home-header {
+    font-size: 3em;
+    color: #e14658;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    text-shadow: -2px -2px 0 #222, 2px 2px 0 #222, 0 0 8px #22252c, 0 0 16px #c0b3a0;
+    background-image: none;
+    background-color: transparent; 
+}
+#home-subheader {
+    font-size: 1.7em;
+    color: #c0b3a0;
+    text-align: center;
+    display: block;
+    text-shadow: -2px -2px 0 #222, 2px 2px 0 #222, 0 0 8px #22252c, 0 0 16px #c0b3a0;
+}
+#home-nav {
+    background: #3f3250;
+    overflow: hidden;
+    float: left;
+    width: 35%;
+    height: 100vh;
+    border-right: 16px solid #22252c;
+    box-shadow: 8px 0 0px #e14658;
+}
+#home-nav p {
+    background: none;
+    box-shadow: none;
+}
+.standard-nav {
+    background: #BD0016;
+    overflow: hidden;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 85px;
+    transition: 1s ease-in-out height;
+}
+.standard-nav:hover {
+    height: 250px;
+}
+
+.nav-logo {
+    width: 80px;
+    float: left;
+    margin: auto;
+}
+.nav-menu {
+    width: 50px;
+    float: right;
+    margin: 15px 35px 0 0;
+    border-radius: .1px;
+}
+.standard-nav ul {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+.standard-nav ul li {
+    list-style: none;
+    padding: 4px 0;
+}
+.standard-nav ul li a {
+    color: #c0b3a0;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 0 0 13px #222;
+    display: inline-block;
+    transition: .4s ease-in-out text-shadow;
+}
+.standard-nav ul li a:hover {
+    text-shadow: 3px 2px 13px #fff;
+}
+.standard-body {
+    background-image: none;
+}
+#logo {
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+#menu {
+    display: none;
+    width: 20%;
+    margin: 0 0 15px 15px; 
+    border-radius: 1px;
+}
+#home-nav ul {
+    padding: 0;
+}
+#home-nav ul li {
+    list-style: none;
+    text-align: center;
+    margin: 15px 0px;
+}
+#home-nav ul li img {
+    display: none;
+    
+}
+#home-nav ul li a {
+    color: #c0b3a0;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 0 0 13px #222;
+    display: block;
+}
+#home-nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    
+}
+#membership-img {
+    width: 75%;
+    min-width: 400px;
+    margin: 50px auto;
+    box-shadow: -8px 8px 15px #222;
+}
+form {
+    width: 50%;
+    margin: 0 auto 25px;
+    background: #22252c;
+    font-size: 17px;
+    min-width: 320px;
+    border: 5px solid #e14658;
+    border-radius: 15px;
+    box-shadow: -8px 8px 15px #222;
+}
+form h3 {
+    padding: 12px;
+    background: #e14658;
+    border: 5px solid #e14658;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #777;
+}
+form p {
+    font-weight: 700;
+}
+legend {
+    background: #e14658;
+    border: 5px solid #e14658;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #777;
+    text-align: center;
+    color: #c0b3a0;
+    text-shadow: 0 0 5px #222;
+    font-weight: 700;
+}
+label {
+    font-weight: normal;
+    color: #c0b3a0;
+}
+input, textarea {
+    display: block;
+    padding: .5em;
+    width: 100%;
+    border-radius: 11px;
+    background: #3f3250;
+    margin: 10px 0;
+    font-family: 'Montserrat'; 
+    
+}
+input[type="text"] {
+    padding: .9em;
+    color: white;
+}
+input[type="email"] {
+    padding: .9em;
+    color: white;
+}
+input[type="tel"] {
+    padding: .9em;
+    color: white;
+}
+textarea {
+    height: 150px;
+    color: white;
+}
+input[type="radio"] {
+    display: inline;
+    width: auto;
+}
+input[type="checkbox"] {
+    display: inline;
+    width: auto;
+}
+input[type="submit"] {
+    width: 70%;
+    color: #c0b3a0;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto 15px;
+    transition: .5s ease-in-out all;
+}
+input[type="submit"]:hover {
+    text-shadow: 0 0 15px red;
+    width: 45%;
+    border-radius: 190px;
+}
+.hide {
+    text-indent: -9999999px;
+    display: inline-block;
+}
+#contact-info img {
+    width: 50px;
+    display: inline-block;
+}
+#contact-info p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+#social img {
+    width: 50px;
+    display: inline-block;
+}
+#contact1 {
+    margin: 65px auto;
+    width: 70%;
+}
+#contact1 p {
+    margin: 25px 0 10px 15px;
+    width: 90%;
+}
+#contact2 {
+    background: #c0b3a0;
+    background-image: url(images/splash2.jpg);
+    background-size: contain;
+    width: 80%;
+    min-width: 430px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: -5px 2px #e14658, 0 0 20px #fff;
+}
+#contact2 h2 {
+    background: #3f3250;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -5px 2px #e14658;
+}
+#contact2 li {
+    background: #e14658;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: -5px 2px #22252c;
+}
+#contact2 p {
+    padding-left: 25px;
+}
+#contact2 img {
+    margin: 0;
+    
+}
+#contact3 {
+    background: #c0b3a0;
+    background-image: url(images/splash3.jpg);
+    background-size: cover;
+    width: 80%;
+    min-width: 430px;
+    margin: 90px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: -5px 2px #e14658, 0 0 20px #fff;
+}
+#contact3 h2 {
+    background: #3f3250;
+    font-size: 1.8em;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -5px 2px #e14658;
+}
+#contact3 li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 3.2%;
+    padding: 0;
+    border: 5px solid #e14658;
+    border-radius: 90px;
+    background: #c0b3a0;
+}
+#contact3 li:hover {
+    box-shadow: 0 0 10px #ff2222, 0 0 20px #fff;
+}
+#contact3 img {
+    margin: 0;
+}
+.clinic-img {
+    display: block;
+    margin: 65px auto 20px;
+    border: 8px solid #22252c;
+    box-shadow: -3px 3px #3f3250, -7px 7px #e14658; 
+}
+.clinic-p {
+    display: block;
+    width: 45%;
+    padding: 10px;
+    background: #22252c;
+    border: 4px solid #c0b3a0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #fff;
+}
+#indoor-gallery {
+    clear: both;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 65px auto 0;
+    padding: 7px;
+    background: #c0b3a0;
+    border-radius: 15px;
+    border: #e14658 6px solid;
+    box-shadow: 0 0 12px #111;
+}
+#indoor-gallery a {
+    display: inline-block;
+    width: 31%;
+}
+#indoor-gallery img {
+    border: 3px solid #e14658;
+    display: inline-block;
+    width: 90%;
+    height: 120px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #111;
+    transition: .3s ease-in-out all;
+}
+#indoor-gallery img:hover {
+    box-shadow: 0 0 16px #fff;
+}
+#outdoor-gallery {
+    clear: both;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 65px auto 0;
+    padding: 7px;
+    background: #c0b3a0;
+    border-radius: 15px;
+    border: #e14658 6px solid;
+    box-shadow: 0 0 12px #111;
+}
+#outdoor-gallery a {
+    display: inline-block;
+    width: 31%;
+}
+#outdoor-gallery img {
+    border: 3px solid #e14658;
+    display: inline-block;
+    width: 90%;
+    height: 120px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #111;
+    transition: .3s ease-in-out all;
+}
+#outdoor-gallery img:hover {
+    box-shadow: 0 0 16px #fff;
+}
+
+
+
+
+
+
+/*MEDIA QUERY FOR LARGER SCREENS*/
+
+@media screen and (min-width:770px){
+    #home-header {
+        font-size: 6em;
+    }
+    #home-subheader {
+        font-size: 3em;
+    }
+    #menu {
+     display: none;
+}
+    #logo {
+        width: 65%;
+    }
+    #home-nav {
+        width: 20%;
+    }
+    #home-nav ul li{
+        text-align: left;
+        display: inline-block;
+        margin: auto;
+    }
+    #home-nav ul li a p {
+        color: #3f3250;
+        transition: .5s ease-in-out color;
+        text-shadow: none;
+        font-size: 1.3em;
+        margin: 0;
+    }
+    #home-nav ul li a img:hover + p {
+        color: #c0b3a0;
+        text-shadow: 0 0 13px #ff2222;
+    }
+    
+    #home-nav ul li a p {
+        display: inline-block;
+        width: 60%;
+    }
+    #home-nav ul li img {
+        display: inline;
+        width: 15%;
+        margin: 10px 20px 0;
+    }
+    img {
+        width: 100%;
+    }
+    .standard-nav:hover {
+        height: 85px;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    .nav-logo {
+        float: left;
+        position: absolute;
+    }
+    .standard-nav ul {
+        display: flex;
+        height: 85px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 10%;
+    }
+    .standard-nav ul li {
+        padding: 0 15px;
+        margin: 25px 0;
+        width: 15%;
+        display: block;
+    }
+    footer img {
+        width: 5%;
+        right: 15px;
+        bottom: 19px;
+    }
+    #classes1 {
+        overflow: hidden;
+        height: 80%;
+        margin-top: 65px;
+    }
+    #classes1 h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    #classes1 img {
+        width: 50%;
+        float: right;
+    }
+    #classes1 p {
+        width: 30%;
+        float: right;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-right: 10px;
+        display: inline-block;
+        
+    }
+    #classes2 {
+        overflow: hidden;
+        height: 80%;
+        margin-top: 65px;
+    }
+    #classes2 h2 {
+        display: block;
+        text-align: center;
+    }
+    #classes2 img {
+        width: 50%;
+        float: left;
+    }
+    #classes2 p {
+        width: 30%;
+        float: left;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    #classes3 {
+        overflow: hidden;
+        height: 80%;
+        margin-top: 65px;
+    }
+    #classes3 h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    #classes3 img {
+        display: none;
+    }
+    #clinic {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    #events1 {
+        overflow: hidden;
+        height: auto;
+        margin-top: 65px;
+    }
+    #events1 h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    #events1 img {
+        margin: 15px;
+        width: 50%;
+        float: right;
+    }
+    #events1 p {
+        width: 30%;
+        float: right;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-right: 10px;
+        display: inline-block;
+        
+    }
+    #events2 {
+        overflow: hidden;
+        height: auto;
+        margin-top: 65px;
+    }
+    #events2 h2 {
+        display: block;
+        text-align: center;
+    }
+    #events2 img {
+        width: 50%;
+        float: left;
+    }
+    #events2 p {
+        width: 30%;
+        float: left;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    #events3 {
+        overflow: hidden;
+        height: auto;
+        margin-top: 65px;
+    }
+    #events3 h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    #events3 img {
+        width: 50%;
+        float: right;
+    }
+    #events3 p {
+        width: 30%;
+        float: right;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-right: 10px;
+        display: inline-block;
+        
+    }
+    #tour1 {
+        overflow: hidden;
+        height: auto;
+        margin-top: 65px;
+    }
+    #tour1 h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    #tour1 img {
+        margin: 15px;
+        width: 50%;
+        float: right;
+    }
+    #tour1 p {
+        width: 30%;
+        float: right;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-right: 10px;
+        display: inline-block;
+        
+    }
+    #tour2 {
+        overflow: hidden;
+        height: auto;
+        margin-top: 65px;
+    }
+    #tour2 h2 {
+        display: block;
+        text-align: center;
+    }
+    #tour2 img {
+        width: 50%;
+        float: left;
+    }
+    #tour2 p {
+        width: 30%;
+        float: left;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    #tour3 {
+        overflow: hidden;
+        height: auto;
+        margin-top: 65px;
+    }
+    #tour3 h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    #tour3 img {
+        width: 50%;
+        float: right;
+    }
+    #tour3 p {
+        width: 30%;
+        float: right;
+        position: relative;
+        z-index: 100;
+        margin-top: 8%;
+        margin-right: 10px;
+        display: inline-block;
+        
+    }
+    #medal {
+        background-image: url(images/indoor1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #c0b3a0;
+        width: 50%;
+        display: block;
+        margin: 50px auto;
+        background-blend-mode: multiply;
+        border-radius: 30px;
+        box-shadow: 0 0 20px #222;
+    }
+    #medal h2 {
+        display: block;
+        text-align: center;
+        padding: 15px 0 0;
+    }
+    #medal p {
+        width: 45%;
+        padding: 20px;
+        background: #BD0016;
+        border-radius: 40px;
+        box-shadow: 0px 0px 35px #111;
+    }
+    #membership-img {
+        display: none;
+    }
+    #contact1 {
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        margin: 65px auto;
+    }
+    #contact1 form {
+        width: 65%;
+    } 
+    #contact2 {
+        display: inline-block;
+        width: 40%;
+        min-width: 300px;
+        margin: 70px 5%;
+    }
+    #contact3 {
+        display: inline-block;
+        width: 40%;
+        min-width: 300px;
+        margin: 70px 5%;
+    }
+    footer {
+        clear: both;
+    }
+    .clinic-img {
+        width: 75%;
+    }
+    #indoor-gallery {
+        width: 80%;
+    }
+    #indoor-gallery img {
+        height: 220px;
+    }
+    #outdoor-gallery {
+        width: 80%;
+    }
+    #outdoor-gallery img {
+        height: 220px;
+    }
+    
+
+   
+    }
+
+}
+
+    

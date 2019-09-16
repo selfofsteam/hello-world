@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Elevation Memberships</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="standard-body">
+
+      <nav class="standard-nav">
+          <a href="index.html"><img src="images/logo.png" class="nav-logo"></a>
+          <a href="#"><img src="images/menu-icon.png" class="nav-menu"></a>
+          <ul>
+              <li><a href="membership.html">Memberships</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="tour.html">Tour</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+      <header><h1 id="membership-top">Join Elevation</h1></header>
+      <div id="medal">
+          <h2>Gold</h2>
+      <p>Full gym access, one free excursion per month and one guess pass per month. Get comfortable outside of your comfort zone.</p>
+      <h2>Silver</h2>
+      <p>Full gym access and priority registration for all classes. Perfect for elevating your climb.</p>
+      <h2>Bronze</h2>
+      <p>Full access to all climbing walls and free introductory classes. Start your journey.</p>
+        </div>
+      <img src="images/indoor1.jpg" id="membership-img">
+      <form id="membership" method="post" action="http://student.matmcc.org/125-form.php" target="_blank">
+          <fieldset>
+              <legend>Get Started Today</legend>
+              <h3>Pre-Register online and finish signing up in person</h3>
+              <p>Select Membership Level</p>
+              <p>
+                  <input type="radio" name="level" id="gold" value="gold">
+                    <label for="gold">Gold</label><br>
+                  <input type="radio" name="level" id="silver" value="silver">
+                    <label for="silver">Silver</label><br>
+                  <input type="radio" name="level" id="bronze" value="bronze">
+                    <label for="bronze">Bronze</label><br>
+                  <input type="radio" name="level" id="daypass" value="daypass">
+                    <label for="daypass">Day Pass</label><br>
+                  <label for="fullname"></label>
+                    <span id="input-wrap">
+                  <input type="text" name="fullname" id="fullname" placeholder="First and Last Name">
+                        </span>
+                  <label for="email"></label>
+                    <span id="input-wrap">
+                  <input type="email" name="email" id="email" placeholder="Your Email">
+                        </span>
+                  <label for="phone"></label>
+                    <span id="input-wrap">
+                  <input type="tel" name="phone" id="phone" placeholder="Your Phone Number">
+                        </span>
+                  <label for="goals"></label>
+                    <span id="input-wrap">
+                        <textarea name="goals" id="goals" maxlength="500" placeholder="Tell us about your climbing and fitness goals"></textarea>
+                        </span>
+              </p>
+              
+          </fieldset>
+          <p>
+              <label for="submit" class="hide">Submit: </label>
+              <input type="submit" id="submit" name="submit" value="Send It">
+          </p>
+      </form>
+      
+    
+      <footer>
+          <p>Elevation Climbing Gym. Copyright 2018. Go Higher.</p>
+          <a href="#membership-top"><img src="images/arrow-up-circle.png"></a>
+      </footer>
+
+  </body>
+
+</html>
