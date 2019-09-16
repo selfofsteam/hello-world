@@ -520,7 +520,7 @@ input[type="submit"]:hover {
         margin: auto;
     }
     #home-nav ul li a p {
-        color: #3f3250;
+        color: #c0b3a0;
         transition: .5s ease-in-out color;
         text-shadow: none;
         font-size: 1.3em;
