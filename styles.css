@@ -527,7 +527,6 @@ input[type="submit"]:hover {
         margin: 0;
     }
     #home-nav ul li a img:hover + p {
-        color: #c0b3a0;
         text-shadow: 0 0 13px #ff2222;
     }
     
